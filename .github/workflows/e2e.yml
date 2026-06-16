@@ -29,6 +29,5 @@ jobs:
         npx wait-on http://localhost:3000
         npm run test:e2e
       env:
-        PORT: 3000
         SUPABASE_URL: "https://fake-supabase-url.supabase.co"
         SUPABASE_SERVICE_ROLE_KEY: "fake-service-key"
