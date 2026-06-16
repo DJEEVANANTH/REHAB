@@ -23,15 +23,12 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run development server
-      run: npm run dev:no-detection &
+    - name: Run E2E Tests
+      run: |
+        npm run dev:no-detection &
+        npx wait-on http://localhost:3000
+        npm run test:e2e
       env:
         PORT: 3000
         SUPABASE_URL: "https://fake-supabase-url.supabase.co"
         SUPABASE_SERVICE_ROLE_KEY: "fake-service-key"
-
-    - name: Wait for server to be ready
-      run: npx wait-on http://localhost:3000
-
-    - name: Run Selenium E2E Tests
-      run: npm run test:e2e
