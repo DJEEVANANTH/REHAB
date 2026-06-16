@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently --kill-others-on-fail --prefix-colors \"bgBlue.bold,bgGreen.bold,bgYellow.bold\" --names \"FRONTEND,BACKEND,DETECTION\" \"vite --port=3000 --host=0.0.0.0\" \".\\\\node_modules\\\\.bin\\\\tsx.cmd server.ts\" \"python detection_server.py\"",
-    "dev:no-detection": "concurrently --kill-others-on-fail --prefix-colors \"bgBlue.bold,bgGreen.bold\" --names \"FRONTEND,BACKEND\" \"vite --port=3000 --host=0.0.0.0\" \".\\\\node_modules\\\\.bin\\\\tsx.cmd server.ts\"",
+    "dev:no-detection": "concurrently --kill-others-on-fail --prefix-colors \"bgBlue.bold,bgGreen.bold\" --names \"FRONTEND,BACKEND\" \"vite --port=3000 --host=0.0.0.0\" \"npx tsx server.ts\"",
     "dev:frontend": "vite --port=3000 --host=0.0.0.0",
     "server": "npx tsx server.ts",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "test:e2e": "vitest run tests/e2e"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
