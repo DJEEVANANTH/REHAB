@@ -8,7 +8,8 @@ describe('Rehab App E2E - Login Flow', () => {
   beforeAll(async () => {
     // Setup Chrome options for headless execution in CI
     const options = new chrome.Options();
-    options.addArguments('--headless=new');
+    options.addArguments('--headless');
+    options.addArguments('--disable-gpu');
     options.addArguments('--no-sandbox');
     options.addArguments('--disable-dev-shm-usage');
 
@@ -16,7 +17,7 @@ describe('Rehab App E2E - Login Flow', () => {
       .forBrowser('chrome')
       .setChromeOptions(options)
       .build();
-  }, 30000); // 30s timeout for startup
+  }, 60000); // 60s timeout for startup
 
   afterAll(async () => {
     if (driver) {
