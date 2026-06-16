@@ -1,0 +1,15 @@
+{
+  "users": [],
+  "otps": [
+    {
+      "email": "ragulg1032.sse@saveetha.com",
+      "otp": "695040",
+      "expiresAt": 1779954977164
+    },
+    {
+      "email": "raguljee0408@gmail.com",
+      "otp": "703077",
+      "expiresAt": 1779955031387
+    }
+  ]
+}

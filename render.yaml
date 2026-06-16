@@ -1,0 +1,27 @@
+services:
+  # ── Backend API (Express + Supabase) ──────────────────────────────────────
+  - type: web
+    name: rehab-api
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm install
+    startCommand: npx tsx server.ts
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: VITE_SUPABASE_URL
+        sync: false
+      - key: VITE_SUPABASE_ANON_KEY
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GEMINI_API_KEY
+        sync: false

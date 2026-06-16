@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500;600;700&family=Clash+Display:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-heading: 'Clash Display', 'General Sans', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  --font-body: 'General Sans', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+  /* Premium SaaS UI Light Theme Values */
+  --primary: #0D9488;           /* Teal 600 */
+  --secondary: #0F766E;         /* Teal 700 */
+  --tertiary: #14B8A6;          /* Teal 500 */
+  --background: #F0FDFA;        /* Teal 50 */
+  --surface: #FFFFFF;
+  --on-surface: #115E59;        /* Teal 800 */
+  --on-surface-variant: #0F766E; /* Teal 700 */
+  --outline: #CCFBF1;           /* Teal 100 */
+  --outline-variant: #E6FBF7;   /* Soft light teal outline */
+  
+  --navbar-bg: rgba(255, 255, 255, 0.85);
+  --hover-bg: #E6FBF7;          /* Soft teal-tint hover background */
+  --input-bg: #FFFFFF;
+  --focus-ring: #0D9488;
+  --card-border: rgba(13, 148, 136, 0.15); /* Tinted card border */
+
+  --btn-primary-bg: #0D9488;
+  --btn-primary-hover: #0F766E;
+  --btn-primary-text: #FFFFFF;
+  --btn-secondary-bg: #115E59;
+  --btn-secondary-hover: #134E4A;
+  --btn-secondary-text: #FFFFFF;
+}
+
+.dark {
+  /* Premium SaaS UI Dark Theme Values */
+  --primary: #2DD4BF;           /* Teal 400 - glowing teal accent */
+  --secondary: #99F6E4;         /* Teal 200 */
+  --tertiary: #14B8A6;          /* Teal 500 */
+  --background: #041B1A;        /* Very dark teal background - premium slate-teal */
+  --surface: #0B2B2A;           /* Deep teal surface card */
+  --on-surface: #F0FDFA;        /* Very light teal-white text */
+  --on-surface-variant: #99F6E4; /* Soft teal-cyan secondary text */
+  --outline: #115E59;           /* Teal 800 outline */
+  --outline-variant: #0F766E;   /* Teal 700 outline-variant */
+  
+  --navbar-bg: rgba(4, 27, 26, 0.85);
+  --hover-bg: rgba(45, 212, 191, 0.12); /* Semi-transparent cyan-teal hover */
+  --input-bg: #0B2B2A;
+  --focus-ring: #2DD4BF;
+  --card-border: #115E59;
+
+  --btn-primary-bg: #2DD4BF;
+  --btn-primary-hover: #14B8A6;
+  --btn-primary-text: #041B1A;
+  --btn-secondary-bg: #115E59;
+  --btn-secondary-hover: #0F766E;
+  --btn-secondary-text: #F0FDFA;
+}
+
+@theme {
+  --font-sans: var(--font-body);
+  
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+  --color-error: #ef4444;
+  
+  --spacing-stack-md: 16px;
+  --spacing-stack-lg: 32px;
+  --spacing-base: 8px;
+  --spacing-container-margin-desktop: 40px;
+  --spacing-gutter: 24px;
+  --spacing-stack-sm: 8px;
+  --spacing-container-margin-mobile: 20px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-surface);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--outline-variant);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 9999px;
+  border: 2px solid var(--background);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Custom Premium Cards Styles */
+@layer base {
+  .theme-card {
+    background: var(--surface);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.01);
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .theme-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(30, 41, 59, 0.08), 0 4px 8px rgba(30, 41, 59, 0.02);
+    border-color: var(--outline);
+  }
+
+  .dark .theme-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  }
+
+  .dark .theme-card-hover:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    border-color: var(--outline);
+  }
+}
+
+.glass-sidebar {
+  backdrop-filter: blur(20px);
+  background: rgba(11, 94, 89, 0.45);
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark .glass-sidebar {
+  background: rgba(4, 27, 26, 0.45);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Typography overrides for premium athletic branding */
+h1, h2, h3, h4, h5, h6,
+.font-headline-lg, .font-display-lg, .font-headline-lg-mobile, .font-metric-xl, .font-label-sm {
+  font-family: var(--font-heading);
+}
+
+.font-headline-lg, .font-display-lg, h1, h2 {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.font-metric-xl {
+  font-weight: 600;
+}
+
+button, input[type="button"], input[type="submit"], .btn, .button {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+p, span, input, textarea, select, .nav-link, .sidebar-text, .label, .text-sm, .text-base, .font-body-md {
+  font-family: var(--font-body);
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(0.995);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.hover-shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-shine-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -70%;
+  width: 140%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.45) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  transition: all 0.85s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+}
+
+.hover-shine-effect:hover::after {
+  left: 120%;
+}
+
+/* Reference Video Styles */
+.reference-video-container {
+  width: 100%;
+  aspect-ratio: 420/720;
+  max-width: 420px;
+  max-height: 720px;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.35),
+    0 0 30px rgba(0,255,255,0.08);
+}
+
+@media (min-width: 1024px) {
+  .reference-video-container {
+    width: 420px;
+    height: 720px;
+  }
+}
+
+.reference-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-workout-video-container {
+  width: 100%;
+  height: 420px;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.35),
+    0 0 30px rgba(0,255,255,0.08);
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.top-workout-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+/* Premium Cinematic Hero Video Banner Styles */
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cinematic-zoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.hero-video-banner {
+  position: relative;
+  width: 100%;
+  max-width: 1210px;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 32px;
+  background: #000;
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.35),
+    0 0 40px rgba(0,255,255,0.08);
+  animation: hero-fade-in 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-background-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  animation: cinematic-zoom 10s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,0.75) 0%,
+      rgba(0,0,0,0.45) 45%,
+      rgba(0,0,0,0.75) 100%
+    );
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px;
+}
+
+/* Premium Cinematic Login Video Background Styles */
+@keyframes login-panel-fade {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.login-video-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  animation: login-panel-fade 1.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.login-background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: cinematic-zoom 12s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.login-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(3, 10, 25, 0.75),
+    rgba(2, 6, 23, 0.88)
+  );
+  z-index: 1;
+} 
+
+
+

@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "u_1779957166978",
+      "name": "Ragul Jee0709",
+      "email": "raguljee0709@gmail.com",
+      "profileImage": "https://lh3.googleusercontent.com/a/ACg8ocKccvG6qmkCfkYmoB_EhOVKJ76jyeo1zyXpgVNDoBU2z_edaA=s96-c",
+      "loginProvider": "google",
+      "joinedDate": "May 2026",
+      "username": "@raguljee0709",
+      "googleId": "113768041647356663700"
+    },
+    {
+      "id": "u_1779957402675",
+      "name": "RAGUL G",
+      "email": "ragulg1032.sse@saveetha.com",
+      "profileImage": "https://lh3.googleusercontent.com/a/ACg8ocIwK8JAYv-UwSbNNnOw8CdMt5U433Y8u3IobYX5wcCm5hCzyiUi=s96-c",
+      "loginProvider": "google",
+      "joinedDate": "May 2026",
+      "username": "@ragulg1032.sse",
+      "googleId": "111329089030171961479",
+      "lastLogin": "2026-05-30T11:52:07.678Z"
+    },
+    {
+      "id": "u_1779970919288",
+      "name": "Ragul Jee",
+      "email": "raguljee0409@gmail.com",
+      "profileImage": "https://lh3.googleusercontent.com/a/ACg8ocIZ1on8E6iTBGI028em_sTtofTYR58jVGNkSzH_vwtbxIsPHg=s96-c",
+      "loginProvider": "google",
+      "joinedDate": "May 2026",
+      "username": "@raguljee0409",
+      "googleId": "112585893247304103924"
+    },
+    {
+      "id": "u_1779989525897",
+      "name": "Google Athlete",
+      "email": "raguljee0408@gmail.com",
+      "profileImage": "https://lh3.googleusercontent.com/a/default-user",
+      "loginProvider": "google",
+      "joinedDate": "May 2026",
+      "username": "@raguljee0408",
+      "googleId": "google_oauth_sub_1029384756"
+    },
+    {
+      "id": "u_1779996083957",
+      "name": "Ragul Ganesan",
+      "email": "ganesanragul049@gmail.com",
+      "profileImage": "https://lh3.googleusercontent.com/a/ACg8ocJMGOqsEdcLXHrBPe08WMS60KeRx9zIg4Oa1asBJrFn_ouanA=s96-c",
+      "loginProvider": "google",
+      "joinedDate": "May 2026",
+      "username": "@ganesanragul049",
+      "googleId": "108586176235433964097"
+    },
+    {
+      "id": "u_1780047405201",
+      "name": "Answar Vijes",
+      "email": "answarvijes@gmail.com",
+      "profileImage": "https://lh3.googleusercontent.com/a/ACg8ocKzA4SDblhgT-21NF8hMzuR0gzJ7UVS_pvtTSbjx2cBu4B-AsPl=s96-c",
+      "loginProvider": "google",
+      "joinedDate": "May 2026",
+      "username": "@answarvijes",
+      "googleId": "107709455111071050004"
+    }
+  ],
+  "otps": [],
+  "sessions": []
+}

@@ -1,0 +1,1658 @@
+{
+    "ex-01": {
+        "name": "Finger Open and Close",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Finger+Open+and+Close&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Finger Open and Close.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-02": {
+        "name": "Finger Stretch",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Finger+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Finger Stretch.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-03": {
+        "name": "Finger Spreading",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Finger+Spreading&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Finger Spreading.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-04": {
+        "name": "Finger Tapping",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Finger+Tapping&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Finger Tapping.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-05": {
+        "name": "Thumb Touch Each Finger",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Thumb+Touch+Each+Finger&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Thumb Touch Each Finger.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-06": {
+        "name": "Finger Lifts",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Finger+Lifts&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Finger Lifts.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-07": {
+        "name": "Finger Walking",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Finger+Walking&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Finger Walking.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-08": {
+        "name": "Finger Pinch",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Finger+Pinch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Finger Pinch.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-09": {
+        "name": "Finger Squeezing",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Finger+Squeezing&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Finger Squeezing.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-10": {
+        "name": "Finger Curl",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Finger+Curl&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Finger Curl.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-11": {
+        "name": "Thumb Flexion",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Thumb+Flexion&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Thumb Flexion.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-12": {
+        "name": "Thumb Extension",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Thumb+Extension&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Thumb Extension.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-13": {
+        "name": "Wrist Rotations",
+        "muscle": "Hand & Wrist",
+        "level": "Beginner",
+        "default_reps": 10,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Wrist+Rotations&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Prepare for Wrist Rotations.",
+            "Keep your hand clearly in the camera frame.",
+            "Perform rhythmic movements.",
+            "Rest briefly if needed."
+        ],
+        "mistakes": []
+    },
+    "ex-14": {
+        "name": "Squats",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Squats&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Stand with feet shoulder-width apart.",
+            "Bend knees and lower hips.",
+            "Keep back straight.",
+            "Return to standing."
+        ],
+        "mistakes": []
+    },
+    "ex-15": {
+        "name": "Lunges",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Lunges&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Step forward with one leg.",
+            "Lower hips until both knees are bent at 90 degrees.",
+            "Push back to start."
+        ],
+        "mistakes": []
+    },
+    "ex-16": {
+        "name": "Calf Raises",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Calf+Raises&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Stand straight.",
+            "Push up onto toes.",
+            "Hold briefly.",
+            "Lower heels slowly."
+        ],
+        "mistakes": []
+    },
+    "ex-17": {
+        "name": "Glute Bridges",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Glute+Bridges&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Lie on back, knees bent.",
+            "Lift hips off the floor.",
+            "Squeeze glutes.",
+            "Lower hips."
+        ],
+        "mistakes": []
+    },
+    "ex-18": {
+        "name": "Plank",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Plank&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Rest on forearms and toes.",
+            "Keep body in a straight line.",
+            "Engage core.",
+            "Hold position."
+        ],
+        "mistakes": []
+    },
+    "ex-19": {
+        "name": "Side Plank",
+        "muscle": "Strengthening",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Side+Plank&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Lie on side.",
+            "Prop up on one elbow.",
+            "Lift hips to form a straight line.",
+            "Hold."
+        ],
+        "mistakes": []
+    },
+    "ex-20": {
+        "name": "Wall Sit",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Wall+Sit&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Lean back against a wall.",
+            "Slide down until knees are at 90 degrees.",
+            "Hold position."
+        ],
+        "mistakes": []
+    },
+    "ex-21": {
+        "name": "Push-ups",
+        "muscle": "Strengthening",
+        "level": "Intermediate",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Push-ups&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Start in plank position on hands.",
+            "Lower body until chest is near floor.",
+            "Push back up."
+        ],
+        "mistakes": []
+    },
+    "ex-22": {
+        "name": "Bird-Dog",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Bird-Dog&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Start on hands and knees.",
+            "Extend opposite arm and leg.",
+            "Hold.",
+            "Return and switch sides."
+        ],
+        "mistakes": []
+    },
+    "ex-23": {
+        "name": "Deadbug",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Deadbug&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Lie on back, arms up, knees at 90 degrees.",
+            "Lower opposite arm and leg to floor.",
+            "Return to start."
+        ],
+        "mistakes": []
+    },
+    "ex-24": {
+        "name": "Clamshells",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Clamshells&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Lie on side, knees bent.",
+            "Keep feet together and lift top knee.",
+            "Lower slowly."
+        ],
+        "mistakes": []
+    },
+    "ex-25": {
+        "name": "Step-ups",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Step-ups&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Stand in front of a step.",
+            "Step up with one foot.",
+            "Bring other foot up.",
+            "Step down."
+        ],
+        "mistakes": []
+    },
+    "ex-26": {
+        "name": "Russian Twists",
+        "muscle": "Strengthening",
+        "level": "Intermediate",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Russian+Twists&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Sit with knees bent, lean back slightly.",
+            "Twist torso side to side.",
+            "Keep core engaged."
+        ],
+        "mistakes": []
+    },
+    "ex-27": {
+        "name": "Superman",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Superman&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Lie on stomach.",
+            "Lift arms and legs off the floor simultaneously.",
+            "Hold briefly.",
+            "Lower."
+        ],
+        "mistakes": []
+    },
+    "ex-28": {
+        "name": "Hip Thrusts",
+        "muscle": "Strengthening",
+        "level": "Intermediate",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Hip+Thrusts&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Rest upper back on a bench.",
+            "Place weight on hips.",
+            "Drive hips upward.",
+            "Lower slowly."
+        ],
+        "mistakes": []
+    },
+    "ex-29": {
+        "name": "Heel Drops",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Heel+Drops&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Stand on edge of a step.",
+            "Drop heels below the step level slowly.",
+            "Push back up."
+        ],
+        "mistakes": []
+    },
+    "ex-30": {
+        "name": "Toe Taps",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Toe+Taps&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Lie on back, legs in tabletop position.",
+            "Tap one toe to floor.",
+            "Return to tabletop."
+        ],
+        "mistakes": []
+    },
+    "ex-31": {
+        "name": "Resistance Band Rows",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Resistance+Band+Rows&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Secure band around a post.",
+            "Pull handles toward chest.",
+            "Squeeze shoulder blades together."
+        ],
+        "mistakes": []
+    },
+    "ex-32": {
+        "name": "Lateral Raises",
+        "muscle": "Strengthening",
+        "level": "Intermediate",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Lateral+Raises&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Hold light weights.",
+            "Lift arms out to the sides to shoulder height.",
+            "Lower slowly."
+        ],
+        "mistakes": []
+    },
+    "ex-33": {
+        "name": "Bicep Curls",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Bicep+Curls&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Hold weights at sides.",
+            "Bend elbows to lift weights to shoulders."
+        ],
+        "mistakes": []
+    },
+    "ex-34": {
+        "name": "Tricep Extensions",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Tricep+Extensions&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Hold weight overhead.",
+            "Bend elbows to lower weight behind head."
+        ],
+        "mistakes": []
+    },
+    "ex-35": {
+        "name": "Hamstring Curls",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Hamstring+Curls&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Stand or lie face down.",
+            "Bend knee to bring heel toward glutes."
+        ],
+        "mistakes": []
+    },
+    "ex-36": {
+        "name": "Leg Extensions",
+        "muscle": "Strengthening",
+        "level": "Beginner",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Leg+Extensions&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Sit on chair/machine.",
+            "Straighten knee to lift foot.",
+            "Lower slowly."
+        ],
+        "mistakes": []
+    },
+    "ex-37": {
+        "name": "Overhead Press",
+        "muscle": "Strengthening",
+        "level": "Intermediate",
+        "default_reps": 15,
+        "default_sets": 3,
+        "default_time": "02:00",
+        "image_url": "https://ui-avatars.com/api/?name=Overhead+Press&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Hold weights at shoulder height.",
+            "Press weights directly overhead."
+        ],
+        "mistakes": []
+    },
+    "ex-38": {
+        "name": "Farmer's Walk",
+        "muscle": "Strengthening",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Farmer's+Walk&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Hold heavy weights in each hand.",
+            "Walk forward with good posture."
+        ],
+        "mistakes": []
+    },
+    "ex-39": {
+        "name": "Hamstring Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Hamstring+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Sit on floor, one leg straight.",
+            "Reach toward toes.",
+            "Hold."
+        ],
+        "mistakes": []
+    },
+    "ex-40": {
+        "name": "Quad Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Quad+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Stand holding a wall.",
+            "Grab ankle and pull heel to glute.",
+            "Hold."
+        ],
+        "mistakes": []
+    },
+    "ex-41": {
+        "name": "Calf Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Calf+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Stand facing wall.",
+            "Step one foot back, keep heel down.",
+            "Lean into wall."
+        ],
+        "mistakes": []
+    },
+    "ex-42": {
+        "name": "Chest Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Chest+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Stand in doorway.",
+            "Place forearms on frame.",
+            "Lean forward."
+        ],
+        "mistakes": []
+    },
+    "ex-43": {
+        "name": "Triceps Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Triceps+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Reach one arm overhead and bend elbow.",
+            "Gently pull elbow with other hand."
+        ],
+        "mistakes": []
+    },
+    "ex-44": {
+        "name": "Shoulder Cross-arm",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Shoulder+Cross-arm&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Bring one arm across chest.",
+            "Use other arm to pull it closer."
+        ],
+        "mistakes": []
+    },
+    "ex-45": {
+        "name": "Neck Tilt",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Neck+Tilt&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Sit straight.",
+            "Tilt ear toward shoulder.",
+            "Apply gentle pressure."
+        ],
+        "mistakes": []
+    },
+    "ex-46": {
+        "name": "Neck Rotation",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Neck+Rotation&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Sit straight.",
+            "Turn head to look over shoulder.",
+            "Hold.",
+            "Repeat on other side."
+        ],
+        "mistakes": []
+    },
+    "ex-47": {
+        "name": "Cat-Cow",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Cat-Cow&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Start on hands and knees.",
+            "Arch back up (Cat).",
+            "Let belly drop (Cow)."
+        ],
+        "mistakes": []
+    },
+    "ex-48": {
+        "name": "Child's Pose",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Child's+Pose&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Kneel on floor.",
+            "Sit back on heels.",
+            "Reach arms forward on floor."
+        ],
+        "mistakes": []
+    },
+    "ex-49": {
+        "name": "Cobra Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Cobra+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Lie on stomach.",
+            "Push up on hands, keeping hips on floor.",
+            "Look up."
+        ],
+        "mistakes": []
+    },
+    "ex-50": {
+        "name": "Seated Twist",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Seated+Twist&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Sit on floor.",
+            "Cross one leg over the other.",
+            "Twist torso toward bent knee."
+        ],
+        "mistakes": []
+    },
+    "ex-51": {
+        "name": "Butterfly Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Butterfly+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Sit on floor.",
+            "Bring soles of feet together.",
+            "Gently press knees down."
+        ],
+        "mistakes": []
+    },
+    "ex-52": {
+        "name": "Figure 4 Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Figure+4+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Lie on back.",
+            "Cross one ankle over opposite knee.",
+            "Pull bottom leg toward chest."
+        ],
+        "mistakes": []
+    },
+    "ex-53": {
+        "name": "Knee to Chest",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Knee+to+Chest&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Lie on back.",
+            "Pull one knee into chest with hands.",
+            "Hold."
+        ],
+        "mistakes": []
+    },
+    "ex-54": {
+        "name": "Hip Flexor Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Hip+Flexor+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Kneel on one knee.",
+            "Push hips forward gently.",
+            "Keep back straight."
+        ],
+        "mistakes": []
+    },
+    "ex-55": {
+        "name": "IT Band Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=IT+Band+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Stand, cross one leg behind the other.",
+            "Lean away from the back leg."
+        ],
+        "mistakes": []
+    },
+    "ex-56": {
+        "name": "Wrist Flexor Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Wrist+Flexor+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Extend arm, palm up.",
+            "Gently pull fingers down with other hand."
+        ],
+        "mistakes": []
+    },
+    "ex-57": {
+        "name": "Wrist Extensor Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Wrist+Extensor+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Extend arm, palm down.",
+            "Gently pull fingers down with other hand."
+        ],
+        "mistakes": []
+    },
+    "ex-58": {
+        "name": "Ankle Circles",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Ankle+Circles&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Sit or stand.",
+            "Lift one foot.",
+            "Rotate ankle in circles clockwise and counterclockwise."
+        ],
+        "mistakes": []
+    },
+    "ex-59": {
+        "name": "Torso Twist",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Torso+Twist&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Stand with feet wide.",
+            "Twist torso side to side, letting arms swing naturally."
+        ],
+        "mistakes": []
+    },
+    "ex-60": {
+        "name": "Latissimus Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Latissimus+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Reach arms overhead.",
+            "Grab one wrist and lean to the opposite side."
+        ],
+        "mistakes": []
+    },
+    "ex-61": {
+        "name": "Thread the Needle",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Thread+the+Needle&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Start on hands and knees.",
+            "Slide one arm under the other.",
+            "Rest shoulder on floor."
+        ],
+        "mistakes": []
+    },
+    "ex-62": {
+        "name": "Downward Dog",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Downward+Dog&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Start in plank.",
+            "Push hips up and back.",
+            "Try to press heels to the floor."
+        ],
+        "mistakes": []
+    },
+    "ex-63": {
+        "name": "Pectoral Corner Stretch",
+        "muscle": "Stretching",
+        "level": "Beginner",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Pectoral+Corner+Stretch&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Stand facing a corner.",
+            "Place hands on walls.",
+            "Lean chest forward into the corner."
+        ],
+        "mistakes": []
+    },
+    "ex-64": {
+        "name": "Single-Leg Stand",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Single-Leg+Stand&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-65": {
+        "name": "Tandem Stance",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Tandem+Stance&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-66": {
+        "name": "Tandem Walking",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Tandem+Walking&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-67": {
+        "name": "Heel Walking",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Heel+Walking&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-68": {
+        "name": "Toe Walking",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Toe+Walking&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-69": {
+        "name": "Grapevine (Carioca)",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Grapevine+(Carioca)&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-70": {
+        "name": "Balance Board Stand",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Balance+Board+Stand&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-71": {
+        "name": "Single-Leg Deadlift",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Single-Leg+Deadlift&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-72": {
+        "name": "Y-Balance Reach",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Y-Balance+Reach&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-73": {
+        "name": "Clock Reach",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Clock+Reach&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-74": {
+        "name": "Bosu Ball Squats",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Bosu+Ball+Squats&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-75": {
+        "name": "Swiss Ball Sitting",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Swiss+Ball+Sitting&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-76": {
+        "name": "Marching with Eyes Closed",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Marching+with+Eyes+Closed&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-77": {
+        "name": "Star Excursion",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Star+Excursion&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-78": {
+        "name": "Throw and Catch (One Leg)",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Throw+and+Catch+(One+Leg)&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-79": {
+        "name": "Figure-8 Walking",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Figure-8+Walking&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-80": {
+        "name": "Tai Chi Weight Shifts",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Tai+Chi+Weight+Shifts&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-81": {
+        "name": "Step Over Obstacles",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Step+Over+Obstacles&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-82": {
+        "name": "Backward Walking",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Backward+Walking&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-83": {
+        "name": "Bouncing Ball Walk",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Bouncing+Ball+Walk&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-84": {
+        "name": "Single-Leg Hops",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Single-Leg+Hops&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-85": {
+        "name": "Cross-Body Touches",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Cross-Body+Touches&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-86": {
+        "name": "Wobble Board Tilts",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Wobble+Board+Tilts&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-87": {
+        "name": "Heel-to-Toe Backward Walk",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Heel-to-Toe+Backward+Walk&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-88": {
+        "name": "Stand on Uneven Surface",
+        "muscle": "Balance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 3,
+        "default_time": "01:00",
+        "image_url": "https://ui-avatars.com/api/?name=Stand+on+Uneven+Surface&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain balance position.",
+            "Stay focused and steady."
+        ],
+        "mistakes": []
+    },
+    "ex-89": {
+        "name": "Brisk Walking",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Brisk+Walking&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-90": {
+        "name": "Jogging",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Jogging&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-91": {
+        "name": "Stationary Cycling",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Stationary+Cycling&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-92": {
+        "name": "Swimming (Freestyle)",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Swimming+(Freestyle)&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-93": {
+        "name": "Water Aerobics",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Water+Aerobics&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-94": {
+        "name": "Rowing Machine",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Rowing+Machine&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-95": {
+        "name": "Elliptical Trainer",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Elliptical+Trainer&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-96": {
+        "name": "Stair Climbing",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Stair+Climbing&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-97": {
+        "name": "Jump Rope",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Jump+Rope&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-98": {
+        "name": "Jumping Jacks",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Jumping+Jacks&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-99": {
+        "name": "High Knees",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=High+Knees&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-100": {
+        "name": "Burpees",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Burpees&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-101": {
+        "name": "Mountain Climbers",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Mountain+Climbers&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-102": {
+        "name": "Cross-country Skiing",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Cross-country+Skiing&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-103": {
+        "name": "Aerobic Dance (Zumba)",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Aerobic+Dance+(Zumba)&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-104": {
+        "name": "Shadow Boxing",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Shadow+Boxing&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-105": {
+        "name": "Treadmill Incline Walk",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Treadmill+Incline+Walk&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-106": {
+        "name": "Arm Ergometer",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Arm+Ergometer&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-107": {
+        "name": "Outdoor Cycling",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Outdoor+Cycling&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-108": {
+        "name": "Speed Walking",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Speed+Walking&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-109": {
+        "name": "Heavy Bag Boxing",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Heavy+Bag+Boxing&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-110": {
+        "name": "Swimming (Breaststroke)",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Swimming+(Breaststroke)&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-111": {
+        "name": "Step Aerobics",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Step+Aerobics&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-112": {
+        "name": "Circuit Training",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Circuit+Training&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    },
+    "ex-113": {
+        "name": "Agility Ladder Drills",
+        "muscle": "Endurance",
+        "level": "Intermediate",
+        "default_reps": 1,
+        "default_sets": 1,
+        "default_time": "05:00",
+        "image_url": "https://ui-avatars.com/api/?name=Agility+Ladder+Drills&background=random&color=fff&size=512&font-size=0.33&bold=true&rounded=true",
+        "steps": [
+            "Maintain continuous movement.",
+            "Breathe steadily."
+        ],
+        "mistakes": []
+    }
+}

@@ -1,0 +1,53 @@
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
+import {defineConfig} from 'vite';
+
+export default defineConfig(() => {
+  return {
+    plugins: [react(), tailwindcss()],
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, '.'),
+      },
+    },
+    server: {
+      // HMR is disabled in AI Studio via DISABLE_HMR env var.
+      // Do not modify—file watching is disabled to prevent flickering during agent edits.
+      hmr: process.env.DISABLE_HMR !== 'true',
+      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
+      watch: process.env.DISABLE_HMR === 'true' ? null : {},
+      proxy: {
+        '/api/detection': {
+          target: 'http://localhost:5001',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api\/detection/, ''),
+          configure: (proxy, _options) => {
+            proxy.removeAllListeners('error');
+            proxy.on('error', (err, req, res) => {
+              if (res && !res.headersSent) {
+                res.writeHead(502, { 'Content-Type': 'text/plain' });
+                res.end('Detection server is starting up or offline.');
+              }
+              console.log('📡 [Proxy] Detection server not reachable yet (still booting up?)');
+            });
+          },
+        },
+        '/api': {
+          target: 'http://localhost:5000',
+          changeOrigin: true,
+          configure: (proxy, _options) => {
+            proxy.removeAllListeners('error');
+            proxy.on('error', (err, req, res) => {
+              if (res && !res.headersSent) {
+                res.writeHead(502, { 'Content-Type': 'text/plain' });
+                res.end('Auth server is starting up or offline.');
+              }
+              console.log('🔌 [Proxy] Auth server not reachable yet (still booting up?)');
+            });
+          },
+        },
+      },
+    },
+  };
+});
