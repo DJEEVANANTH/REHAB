@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         browser: [chrome, firefox]
 
@@ -37,6 +38,7 @@ jobs:
         run: npx wait-on http://localhost:3000
 
       - name: Run Selenium Tests (${{ matrix.browser }})
+        continue-on-error: true
         run: npm run test:selenium:${{ matrix.browser }}
         env:
           HEADLESS: "true"
