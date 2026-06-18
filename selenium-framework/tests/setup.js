@@ -19,7 +19,13 @@ before(async function() {
     const builder = new Builder().forBrowser(config.browser);
     
     if (config.headless) {
-        const chromeOptions = new chrome.Options().addArguments('--headless', '--disable-gpu', '--window-size=1920,1080');
+        const chromeOptions = new chrome.Options().addArguments(
+            '--headless', 
+            '--disable-gpu', 
+            '--window-size=1920,1080',
+            '--no-sandbox',
+            '--disable-dev-shm-usage'
+        );
         const firefoxOptions = new firefox.Options().addArguments('--headless', '--window-size=1920,1080');
         const edgeOptions = new edge.Options().addArguments('--headless', '--disable-gpu', '--window-size=1920,1080');
         
