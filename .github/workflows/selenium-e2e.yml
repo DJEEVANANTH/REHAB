@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        browser: [chrome, firefox, edge]
+        browser: [chrome, firefox]
 
     steps:
       - name: Checkout Repository
@@ -26,13 +26,6 @@ jobs:
 
       - name: Install Dependencies
         run: npm ci
-
-      - name: Install Browsers
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable firefox
-          # Edge installation (Microsoft Edge is available for Linux, but can be complex to setup in standard runners. Chrome/Firefox is guaranteed).
-          # For Edge we recommend using a container or falling back to Chrome if unavailable on the specific runner.
 
       - name: Start Application Server
         run: npm run dev:no-detection &
