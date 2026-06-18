@@ -1,0 +1,549 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2026-06-18T04:26:44.359Z",
+    "end": "2026-06-18T04:26:44.364Z",
+    "duration": 5,
+    "testsRegistered": 11,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 3,
+    "hasOther": true,
+    "skipped": 8,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "26279bed-001d-4b72-acc5-293c960f4da6",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5f919f94-d6e6-42da-8fff-0688e463082a",
+          "title": "Authentication Testing",
+          "fullFile": "D:\\Application-1-master\\Application-1-master\\selenium-framework\\tests\\auth.test.js",
+          "file": "\\selenium-framework\\tests\\auth.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Authentication Testing\"",
+              "fullTitle": "Authentication Testing \"before all\" hook in \"Authentication Testing\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage = new LoginPage(getDriver());",
+              "err": {},
+              "uuid": "22629845-1f4e-4be8-81a7-2d9eb03375d0",
+              "parentUUID": "5f919f94-d6e6-42da-8fff-0688e463082a",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook for \"should show error for empty username\"",
+              "fullTitle": "Authentication Testing \"before each\" hook for \"should show error for empty username\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await loginPage.navigate();",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'get')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'get')\n    at LoginPage.navigateTo (file:///D:/Application-1-master/Application-1-master/selenium-framework/pages/BasePage.js:10:27)\n    at LoginPage.navigate (file:///D:/Application-1-master/Application-1-master/selenium-framework/pages/LoginPage.js:17:20)\n    at Context.<anonymous> (file:///D:/Application-1-master/Application-1-master/selenium-framework/tests/auth.test.js:14:25)\n    at process.processImmediate (node:internal/timers:504:21)",
+                "diff": null
+              },
+              "uuid": "b34ce30c-6ade-495b-b5dd-533076ad57fb",
+              "parentUUID": "5f919f94-d6e6-42da-8fff-0688e463082a",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should show error for empty username",
+              "fullTitle": "Authentication Testing should show error for empty username",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await loginPage.login('', 'Password123!');\nconst errorMsg = await loginPage.getErrorMessage();\nexpect(errorMsg).to.not.be.empty;",
+              "err": {},
+              "uuid": "6136175e-8501-419d-a9a8-fd4bfa6a4fd5",
+              "parentUUID": "5f919f94-d6e6-42da-8fff-0688e463082a",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should show error for empty password",
+              "fullTitle": "Authentication Testing should show error for empty password",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await loginPage.login('testuser@example.com', '');\nconst errorMsg = await loginPage.getErrorMessage();\nexpect(errorMsg).to.not.be.empty;",
+              "err": {},
+              "uuid": "83e29b4e-22cb-404a-bb62-707fd5331266",
+              "parentUUID": "5f919f94-d6e6-42da-8fff-0688e463082a",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should show error for invalid credentials",
+              "fullTitle": "Authentication Testing should show error for invalid credentials",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await loginPage.login(config.credentials.invalidUser.username, config.credentials.invalidUser.password);\nconst errorMsg = await loginPage.getErrorMessage();\nexpect(errorMsg).to.contain('Invalid login credentials');",
+              "err": {},
+              "uuid": "a994968b-1cd8-43db-a215-5920b9edd5e7",
+              "parentUUID": "5f919f94-d6e6-42da-8fff-0688e463082a",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should login successfully with valid credentials",
+              "fullTitle": "Authentication Testing should login successfully with valid credentials",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Skip if you want to prevent true login side effects during normal runs\nawait loginPage.login(config.credentials.validUser.username, config.credentials.validUser.password);\nconst url = await loginPage.getCurrentUrl();\nexpect(url).to.not.include('/auth');\n\n// Validate Logout flow\nconst canLogout = await loginPage.isLogoutVisible();\nif (canLogout) {\n    await loginPage.logout();\n    const urlAfterLogout = await loginPage.getCurrentUrl();\n    expect(urlAfterLogout).to.include('/auth');\n}",
+              "err": {},
+              "uuid": "22045da8-3c6a-4a16-8431-8f1444935d29",
+              "parentUUID": "5f919f94-d6e6-42da-8fff-0688e463082a",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "6136175e-8501-419d-a9a8-fd4bfa6a4fd5",
+            "83e29b4e-22cb-404a-bb62-707fd5331266",
+            "a994968b-1cd8-43db-a215-5920b9edd5e7",
+            "22045da8-3c6a-4a16-8431-8f1444935d29"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        },
+        {
+          "uuid": "3fb82ae7-f4fe-47ba-826b-cb49f56141be",
+          "title": "Dynamic Form Validation Testing",
+          "fullFile": "D:\\Application-1-master\\Application-1-master\\selenium-framework\\tests\\dynamicForm.test.js",
+          "file": "\\selenium-framework\\tests\\dynamicForm.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Dynamic Form Validation Testing\"",
+              "fullTitle": "Dynamic Form Validation Testing \"before all\" hook in \"Dynamic Form Validation Testing\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils = new SeleniumUtils(getDriver());",
+              "err": {},
+              "uuid": "9406234b-e848-4fe0-ba39-c24162188390",
+              "parentUUID": "3fb82ae7-f4fe-47ba-826b-cb49f56141be",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "f1cd1b26-7245-448c-899e-fffa96cce984",
+              "title": "Validating forms on: http://localhost:3000",
+              "fullFile": "D:\\Application-1-master\\Application-1-master\\selenium-framework\\tests\\dynamicForm.test.js",
+              "file": "\\selenium-framework\\tests\\dynamicForm.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "e85cdf01-452b-4ba4-9689-48740bd59d88",
+                  "title": "Form #0",
+                  "fullFile": "D:\\Application-1-master\\Application-1-master\\selenium-framework\\tests\\dynamicForm.test.js",
+                  "file": "\\selenium-framework\\tests\\dynamicForm.test.js",
+                  "beforeHooks": [
+                    {
+                      "title": "\"before each\" hook for \"should have required fields configured correctly\"",
+                      "fullTitle": "Dynamic Form Validation Testing Validating forms on: http://localhost:3000 Form #0 \"before each\" hook for \"should have required fields configured correctly\"",
+                      "timedOut": false,
+                      "duration": 1,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "await getDriver().get(pageData.url);",
+                      "err": {
+                        "message": "TypeError: Cannot read properties of undefined (reading 'get')",
+                        "estack": "TypeError: Cannot read properties of undefined (reading 'get')\n    at Context.<anonymous> (file:///D:/Application-1-master/Application-1-master/selenium-framework/tests/dynamicForm.test.js:36:42)\n    at process.processImmediate (node:internal/timers:504:21)",
+                        "diff": null
+                      },
+                      "uuid": "504b2fbc-65ed-4a81-9a96-68555b49c10b",
+                      "parentUUID": "e85cdf01-452b-4ba4-9689-48740bd59d88",
+                      "isHook": true,
+                      "skipped": false
+                    }
+                  ],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "should have required fields configured correctly",
+                      "fullTitle": "Dynamic Form Validation Testing Validating forms on: http://localhost:3000 Form #0 should have required fields configured correctly",
+                      "timedOut": false,
+                      "duration": 0,
+                      "state": null,
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "const requiredInputs = form.inputs.filter(i => i.required);\nlogger.info(`Found ${requiredInputs.length} required inputs on Form #${form.formIndex}`);\n\n// We can just verify the elements exist with required attribute in the DOM\nfor (const input of requiredInputs) {\n    let locator;\n    if (input.id) locator = By.id(input.id);\n    else if (input.name) locator = By.name(input.name);\n    else continue;\n    const element = await utils.waitForElementVisible(locator);\n    const isReq = await element.getAttribute('required');\n    expect(isReq).to.not.be.null;\n}",
+                      "err": {},
+                      "uuid": "14f2e325-0d24-4524-95b1-ec0ba0fa788f",
+                      "parentUUID": "e85cdf01-452b-4ba4-9689-48740bd59d88",
+                      "isHook": false,
+                      "skipped": true
+                    },
+                    {
+                      "title": "should validate email fields if present",
+                      "fullTitle": "Dynamic Form Validation Testing Validating forms on: http://localhost:3000 Form #0 should validate email fields if present",
+                      "timedOut": false,
+                      "duration": 0,
+                      "state": null,
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "const emailInputs = form.inputs.filter(i => i.type === 'email');\nfor (const input of emailInputs) {\n    let locator;\n    if (input.id) locator = By.id(input.id);\n    else locator = By.name(input.name);\n    const element = await utils.waitForElementVisible(locator);\n    const typeAttr = await element.getAttribute('type');\n    expect(typeAttr).to.equal('email');\n}",
+                      "err": {},
+                      "uuid": "d5557cc6-ca62-4f2c-a6ba-4de40579f86d",
+                      "parentUUID": "e85cdf01-452b-4ba4-9689-48740bd59d88",
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "14f2e325-0d24-4524-95b1-ec0ba0fa788f",
+                    "d5557cc6-ca62-4f2c-a6ba-4de40579f86d"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 60000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            },
+            {
+              "uuid": "0b1ec701-e51b-49a4-b2e1-ef22449134f3",
+              "title": "Validating forms on: http://localhost:3000/",
+              "fullFile": "D:\\Application-1-master\\Application-1-master\\selenium-framework\\tests\\dynamicForm.test.js",
+              "file": "\\selenium-framework\\tests\\dynamicForm.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "8917a1a2-3908-410e-a763-8743e2862829",
+                  "title": "Form #0",
+                  "fullFile": "D:\\Application-1-master\\Application-1-master\\selenium-framework\\tests\\dynamicForm.test.js",
+                  "file": "\\selenium-framework\\tests\\dynamicForm.test.js",
+                  "beforeHooks": [
+                    {
+                      "title": "\"before each\" hook for \"should have required fields configured correctly\"",
+                      "fullTitle": "Dynamic Form Validation Testing Validating forms on: http://localhost:3000/ Form #0 \"before each\" hook for \"should have required fields configured correctly\"",
+                      "timedOut": false,
+                      "duration": 0,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "await getDriver().get(pageData.url);",
+                      "err": {
+                        "message": "TypeError: Cannot read properties of undefined (reading 'get')",
+                        "estack": "TypeError: Cannot read properties of undefined (reading 'get')\n    at Context.<anonymous> (file:///D:/Application-1-master/Application-1-master/selenium-framework/tests/dynamicForm.test.js:36:42)\n    at process.processImmediate (node:internal/timers:504:21)",
+                        "diff": null
+                      },
+                      "uuid": "ae89e868-489f-4957-b938-e86e3f38950d",
+                      "parentUUID": "8917a1a2-3908-410e-a763-8743e2862829",
+                      "isHook": true,
+                      "skipped": false
+                    }
+                  ],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "should have required fields configured correctly",
+                      "fullTitle": "Dynamic Form Validation Testing Validating forms on: http://localhost:3000/ Form #0 should have required fields configured correctly",
+                      "timedOut": false,
+                      "duration": 0,
+                      "state": null,
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "const requiredInputs = form.inputs.filter(i => i.required);\nlogger.info(`Found ${requiredInputs.length} required inputs on Form #${form.formIndex}`);\n\n// We can just verify the elements exist with required attribute in the DOM\nfor (const input of requiredInputs) {\n    let locator;\n    if (input.id) locator = By.id(input.id);\n    else if (input.name) locator = By.name(input.name);\n    else continue;\n    const element = await utils.waitForElementVisible(locator);\n    const isReq = await element.getAttribute('required');\n    expect(isReq).to.not.be.null;\n}",
+                      "err": {},
+                      "uuid": "8f3bbeb6-fe01-4175-a08f-3aa27fc40b31",
+                      "parentUUID": "8917a1a2-3908-410e-a763-8743e2862829",
+                      "isHook": false,
+                      "skipped": true
+                    },
+                    {
+                      "title": "should validate email fields if present",
+                      "fullTitle": "Dynamic Form Validation Testing Validating forms on: http://localhost:3000/ Form #0 should validate email fields if present",
+                      "timedOut": false,
+                      "duration": 0,
+                      "state": null,
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "const emailInputs = form.inputs.filter(i => i.type === 'email');\nfor (const input of emailInputs) {\n    let locator;\n    if (input.id) locator = By.id(input.id);\n    else locator = By.name(input.name);\n    const element = await utils.waitForElementVisible(locator);\n    const typeAttr = await element.getAttribute('type');\n    expect(typeAttr).to.equal('email');\n}",
+                      "err": {},
+                      "uuid": "c7681b6c-2d3a-48c6-a6d2-19413dacdd12",
+                      "parentUUID": "8917a1a2-3908-410e-a763-8743e2862829",
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "8f3bbeb6-fe01-4175-a08f-3aa27fc40b31",
+                    "c7681b6c-2d3a-48c6-a6d2-19413dacdd12"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 60000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        },
+        {
+          "uuid": "14a5899c-664b-4ea1-8ed6-ada1e0fd8c4d",
+          "title": "Navigation Testing",
+          "fullFile": "D:\\Application-1-master\\Application-1-master\\selenium-framework\\tests\\navigation.test.js",
+          "file": "\\selenium-framework\\tests\\navigation.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Navigation Testing\"",
+              "fullTitle": "Navigation Testing \"before all\" hook in \"Navigation Testing\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "basePage = new BasePage(getDriver());",
+              "err": {},
+              "uuid": "ebe3bcd6-c875-428f-aeeb-24e5ba3e83dd",
+              "parentUUID": "14a5899c-664b-4ea1-8ed6-ada1e0fd8c4d",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should navigate to home and refresh",
+              "fullTitle": "Navigation Testing should navigate to home and refresh",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await basePage.navigateTo(`${config.baseUrl}/`);\nconst title = await basePage.getTitle();\nexpect(title).to.be.a('string');\n\nawait basePage.refresh();\nconst url = await basePage.getCurrentUrl();\nexpect(url).to.equal(`${config.baseUrl}/`);",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'get')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'get')\n    at BasePage.navigateTo (file:///D:/Application-1-master/Application-1-master/selenium-framework/pages/BasePage.js:10:27)\n    at Context.<anonymous> (file:///D:/Application-1-master/Application-1-master/selenium-framework/tests/navigation.test.js:15:24)\n    at process.processImmediate (node:internal/timers:504:21)",
+                "diff": null
+              },
+              "uuid": "e519d8b6-ee85-4da0-b477-69af6e2397d7",
+              "parentUUID": "14a5899c-664b-4ea1-8ed6-ada1e0fd8c4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test browser back and forward functionality",
+              "fullTitle": "Navigation Testing should test browser back and forward functionality",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await basePage.navigateTo(`${config.baseUrl}/`);\nawait basePage.navigateTo(`${config.baseUrl}/auth`);\n\nawait basePage.goBack();\nlet url = await basePage.getCurrentUrl();\nexpect(url).to.equal(`${config.baseUrl}/`);\n\nawait basePage.goForward();\nurl = await basePage.getCurrentUrl();\nexpect(url).to.include('/auth');",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'get')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'get')\n    at BasePage.navigateTo (file:///D:/Application-1-master/Application-1-master/selenium-framework/pages/BasePage.js:10:27)\n    at Context.<anonymous> (file:///D:/Application-1-master/Application-1-master/selenium-framework/tests/navigation.test.js:25:24)\n    at process.processImmediate (node:internal/timers:504:21)",
+                "diff": null
+              },
+              "uuid": "2c7fdae3-a351-4ea4-90bf-2c468eddbc8e",
+              "parentUUID": "14a5899c-664b-4ea1-8ed6-ada1e0fd8c4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should find and click navbar links if present",
+              "fullTitle": "Navigation Testing should find and click navbar links if present",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await basePage.navigateTo(`${config.baseUrl}/`);\ntry {\n    const navLinks = await getDriver().findElements(By.css('nav a'));\n    if (navLinks.length > 0) {\n        const href = await navLinks[0].getAttribute('href');\n        if (href && href.startsWith('http')) {\n            await navLinks[0].click();\n            const newUrl = await basePage.getCurrentUrl();\n            expect(newUrl).to.equal(href);\n        }\n    }\n} catch (e) {\n    // No navbar found\n}",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'get')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'get')\n    at BasePage.navigateTo (file:///D:/Application-1-master/Application-1-master/selenium-framework/pages/BasePage.js:10:27)\n    at Context.<anonymous> (file:///D:/Application-1-master/Application-1-master/selenium-framework/tests/navigation.test.js:38:24)\n    at process.processImmediate (node:internal/timers:504:21)",
+                "diff": null
+              },
+              "uuid": "aa5a5a03-b034-4eba-8e89-9a56bafd171d",
+              "parentUUID": "14a5899c-664b-4ea1-8ed6-ada1e0fd8c4d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e519d8b6-ee85-4da0-b477-69af6e2397d7",
+            "2c7fdae3-a351-4ea4-90bf-2c468eddbc8e",
+            "aa5a5a03-b034-4eba-8e89-9a56bafd171d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.6"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "selenium-framework/reports",
+        "reportFilename": "mochawesome",
+        "html": "true",
+        "json": "true"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
