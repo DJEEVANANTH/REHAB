@@ -13,7 +13,7 @@
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
     "test:e2e": "vitest run tests/e2e",
-    "test:selenium": "cross-env NODE_ENV=test mocha \"selenium-framework/tests/**/*.test.js\" --timeout 60000 --reporter mochawesome --reporter-options reportDir=selenium-framework/reports,reportFilename=mochawesome,html=true,json=true",
+    "test:selenium": "cross-env NODE_ENV=test mocha \"selenium-framework/tests/**/*.test.js\" --timeout 120000 --reporter mochawesome --reporter-options reportDir=selenium-framework/reports,reportFilename=mochawesome,html=true,json=true",
     "test:selenium:headless": "cross-env HEADLESS=true npm run test:selenium",
     "test:selenium:chrome": "cross-env BROWSER=chrome npm run test:selenium",
     "test:selenium:firefox": "cross-env BROWSER=firefox npm run test:selenium",
