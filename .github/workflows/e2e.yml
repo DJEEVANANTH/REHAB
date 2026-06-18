@@ -11,23 +11,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '22'
-        cache: 'npm'
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'npm'
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Run E2E Tests
-      run: |
-        npm run dev:no-detection &
-        npx wait-on http://localhost:3000
-        npm run test:e2e
-      env:
-        SUPABASE_URL: "https://fake-supabase-url.supabase.co"
-        SUPABASE_SERVICE_ROLE_KEY: "fake-service-key"
+      - name: Run E2E Tests
+        run: |
+          npm run dev:no-detection &
+          npx wait-on http://localhost:3000
+          npm run test:e2e
+        env:
+          SUPABASE_URL: "https://fake-supabase-url.supabase.co"
+          SUPABASE_SERVICE_ROLE_KEY: "fake-service-key"

@@ -1,0 +1,75 @@
+name: Selenium E2E Tests
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  selenium-tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        browser: [chrome, firefox, edge]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Install Browsers
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable firefox
+          # Edge installation (Microsoft Edge is available for Linux, but can be complex to setup in standard runners. Chrome/Firefox is guaranteed).
+          # For Edge we recommend using a container or falling back to Chrome if unavailable on the specific runner.
+
+      - name: Start Application Server
+        run: npm run dev:no-detection &
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      - name: Wait for server to be ready
+        run: npx wait-on http://localhost:3000
+
+      - name: Run Selenium Tests (${{ matrix.browser }})
+        run: npm run test:selenium:${{ matrix.browser }}
+        env:
+          HEADLESS: "true"
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      - name: Upload HTML Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mochawesome-report-${{ matrix.browser }}
+          path: selenium-framework/reports/
+          retention-days: 7
+
+      - name: Upload Excel Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: excel-report-${{ matrix.browser }}
+          path: selenium-framework/excel/
+          retention-days: 7
+
+      - name: Upload Error Screenshots
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: error-screenshots-${{ matrix.browser }}
+          path: selenium-framework/reports/failures/
+          retention-days: 7
