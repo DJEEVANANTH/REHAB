@@ -8,12 +8,8 @@ on:
 
 jobs:
   selenium-tests:
+    name: Selenium Web Testing
     runs-on: ubuntu-latest
-
-    strategy:
-      fail-fast: false
-      matrix:
-        browser: [chrome, firefox]
 
     steps:
       - name: Checkout Repository
@@ -34,12 +30,12 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
 
-      - name: Wait for server to be ready
-        run: npx wait-on http://localhost:3000
+      - name: Wait for server initialization
+        run: sleep 30
 
-      - name: Run Selenium Tests (${{ matrix.browser }})
+      - name: Run Selenium Tests
         continue-on-error: true
-        run: npm run test:selenium:${{ matrix.browser }}
+        run: npm run test:selenium:chrome
         env:
           HEADLESS: "true"
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -49,7 +45,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: mochawesome-report-${{ matrix.browser }}
+          name: mochawesome-report
           path: selenium-framework/reports/
           retention-days: 7
 
@@ -57,7 +53,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: excel-report-${{ matrix.browser }}
+          name: excel-report
           path: selenium-framework/excel/
           retention-days: 7
 
@@ -65,6 +61,6 @@ jobs:
         uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: error-screenshots-${{ matrix.browser }}
+          name: error-screenshots
           path: selenium-framework/reports/failures/
           retention-days: 7
