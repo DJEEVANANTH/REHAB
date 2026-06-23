@@ -29,23 +29,9 @@ jobs:
         working-directory: ./mobile-app
         run: npm install
 
-      # Running Appium requires an Android emulator running in the background.
-      # Setting up emulator on github actions:
-      - name: Enable KVM
-        run: |
-          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
-          sudo udevadm control --reload-rules
-          sudo udevadm trigger --name-match=kvm
-
-      - name: Run Appium Tests on Android Emulator
-        uses: reactivecircus/android-emulator-runner@v2
-        with:
-          api-level: 29
-          target: default
-          arch: x86
-          profile: Nexus 6
-          working-directory: ./mobile-app
-          script: npm run test:e2e
+      - name: Run Appium/Mocha E2E Tests
+        working-directory: ./mobile-app
+        run: npm run test:e2e
         
       - name: Upload Error Screenshots
         uses: actions/upload-artifact@v4
