@@ -38,6 +38,7 @@
     "appium": "^2.5.1",
     "appium-uiautomator2-driver": "^3.0.0",
     "babel-preset-expo": "^56.0.15",
-    "chai": "^4.4.1"
+    "chai": "^4.4.1",
+    "exceljs": "^4.4.0"
   }
 }

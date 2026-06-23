@@ -27,7 +27,7 @@ jobs:
 
       - name: Install Mobile App Dependencies
         working-directory: ./mobile-app
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Run Appium/Mocha E2E Tests
         working-directory: ./mobile-app
