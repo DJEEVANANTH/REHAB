@@ -1,0 +1,56 @@
+name: Appium Mobile E2E Tests
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  appium-tests:
+    name: Mobile UI Testing (Appium)
+    runs-on: ubuntu-latest
+    
+    # We need to run inside a machine that can boot Android Emulator
+    # Hardware acceleration is required for emulators
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: './mobile-app/package-lock.json'
+
+      - name: Install Mobile App Dependencies
+        working-directory: ./mobile-app
+        run: npm install
+
+      # Running Appium requires an Android emulator running in the background.
+      # Setting up emulator on github actions:
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Run Appium Tests on Android Emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          target: default
+          arch: x86
+          profile: Nexus 6
+          working-directory: ./mobile-app
+          script: npm run test:e2e
+        
+      - name: Upload Error Screenshots
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: appium-error-screenshots
+          path: mobile-app/errorShots/
+          retention-days: 7
