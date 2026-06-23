@@ -27,7 +27,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test:e2e": "npx mocha e2e/**/*.test.js"
+    "test:e2e": "npx mocha e2e/**/*.test.js && node e2e/generateDummyReport.js"
   },
   "private": true,
   "devDependencies": {
